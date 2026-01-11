@@ -25,23 +25,25 @@ cargo install --git https://github.com/Sector-F-Labs/mdcode
 
 ```bash
 # Help
-cargo run -- --help
+mdcode --help
 
 # Basic extraction (stdin)
-cat sample.md | cargo run --
+cat sample.md | mdcode
 
 # Filter by language and preserve fences
-cargo run -- --lang rust --fenced README.md
+mdcode --lang rust --fenced README.md
 
 # List languages present (no extraction)
-cargo run -- --lang README.md
+mdcode --lang README.md
 
 # Inline code and line numbers, stdin + file
-cat sample.md | cargo run -- --inline --line-numbers README.md
+cat sample.md | mdcode --inline --line-numbers README.md
 
 # JSON output
-cargo run -- --json docs/*.md > blocks.json
+mdcode --json docs/*.md > blocks.json
 ```
+
+During development you can also run directly via Cargo: `cargo run -- --help`
 
 ## Development
 
