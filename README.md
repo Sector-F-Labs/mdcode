@@ -13,6 +13,14 @@ Markdown code extractor CLI (Rust 2024) that pulls fenced and inline code blocks
 - Separator control via `--sep`, fence preservation via `--fenced`
 - Input from files, stdin, or both (stdin processed first)
 
+## Installation
+
+The primary installation method is via Cargo from the Git repository:
+
+```bash
+cargo install --git https://github.com/Sector-F-Labs/mdcode
+```
+
 ## Usage
 
 ```bash
